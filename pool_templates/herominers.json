@@ -4470,11 +4470,13 @@
             }
         ],
         "miners": {
-            "xmrig": {
+            "xmrig-new": {
                 "url": "%URL%",
+                "cpu": "1",
+                "algo": "argon2/chukwav2",
+                "fork": "xmrig",
                 "pass": "%WORKER_NAME%",
-                "template": "%WAL%",
-                "user_config": "\"algo\": \"argon2/chukwav2\""
+                "template": "%WAL%"
             },
             "SRBMiner-MULTI": {
                 "url": "%URL%",
@@ -4482,13 +4484,11 @@
                 "template": "%WAL%",
                 "algo": "argon2id_chukwa2"
             },
-            "xmrig-new": {
-                "cpu": "1",
+            "teamredminer": {
                 "url": "%URL%",
-                "algo": "argon2/chukwav2",
-                "fork": "xmrig",
                 "pass": "%WORKER_NAME%",
-                "template": "%WAL%"
+                "template": "%WAL%",
+                "algo": "trtl_chukwa2"
             }
         }
     },
